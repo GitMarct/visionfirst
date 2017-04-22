@@ -9,7 +9,7 @@ height:50%;
 
 .title-bar {
 padding:0.5em;
-background: rgba(253, 79, 87, 1);
+background: rgba(214, 223, 255, 1);
 display:inline-block;
 }
 
@@ -34,19 +34,19 @@ p {
 	padding:10px;
 }
 a:link {
-  color:#0b377f;
+  color:#2847B2;
   text-decoration:none;
 }
 a:hover {
-  color: #23bc82;
+  color: #839FFF;
   text-decoration:none;
 }
 a:active {
-  color: #efd156;
+  color: #FFE7A9;
   text-decoration:none;
 }
 a:visited {
-  color: #a01118;
+  color: #B29956;
   text-decoration:none;
 }
 
