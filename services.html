@@ -62,7 +62,142 @@
       <br>
       (415) 781-5353 </strong></p>
 
-    	</div>
+    	<div id="content"> 
+  <!-- InstanceBeginEditable name="EditRegion1" -->
+  <h2 id="pageName">Schedule an Appointment </h2>
+  <div class="feature">
+  <FORM NAME="request_appt" METHOD="POST" action="mail_appt_request.php" >
+    <table width="445" border="0">
+      <tr>
+        <th width="130" scope="row"><div align="left">Name:</div></th>
+        <td width="305">
+          <input name="Patient_Name" type="text" id="Patient_Name">
+        </td>
+      </tr>
+      <tr>
+        <th scope="row"><div align="left">Phone contact: </div></th>
+        <td><input name="Phone_Contact" type="text" id="Phone_Contact"></td>
+      </tr>
+      <tr>
+        <th scope="row"><div align="left">E-mail contact: </div></th>
+        <td><input name="Email_Contact" type="text" id="Email_Contact"></td>
+      </tr>
+    </table>
+    <p>Please select your preferred times. While cannot guarantee availability at your requested times, we will try our best to accomodate your scheduling requirements. We will contact you to confirm your appointment.</p>
+    <table width="702" height="108" border="0">
+      <tr>
+        <th width="87" scope="col">&nbsp;</th>
+        <th width="182" scope="col"><div align="center">Office</div></th>
+        <th width="183" scope="col"><div align="center">Day of the Week </div></th>
+        <th width="232" scope="col"><div align="center">Time of the Day </div></th>
+        </tr>
+      <tr>
+        <th scope="row"><div align="left">1st Choice </div></th>
+        <td><div align="center">
+          <select name="1st_Office" size="1" id="1st_Office">
+          <option value="Cupertino" selected>Cupertino</option>
+              <option value="Milpitas">Milpitas</option>
+              <option value="San Francisco">San Francisco</option>
+              <option value="San Jose">San Jose</option>
+              <option value="Fremont">Fremont</option>
+          </select>
+        </div></td>
+        <td><div align="center">
+          <select name="1st_Day" id="1st_Day">
+              <option value="Sunday">Sunday</option>
+              <option value="Monday" selected>Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              </select>
+        </div></td>
+        <td><div align="center">
+          <select name="1st_Time" id="1st_Time">
+              <option value="Early Morning (9:00am-10:30am)" selected>Early Morning (9:00am-10:30am)</option>
+              <option value="Late Morning (10:30am - 12:00pm)">Late Morning (10:30am - 12:00pm)</option>
+              <option value="Early Afternoon (12:00pm - 2:00pm)">Early Afternoon (12:00pm - 2:00pm)</option>
+              <option value="Late Afternoon (2:00pm - 5:30pm)">Late Afternoon (2:00pm - 5:30pm)</option>
+              </select>
+        </div></td>
+        </tr>
+      <tr>
+        <th scope="row"><div align="left">2nd Choice </div></th>
+        <td><div align="center">
+          <select name="2nd_Office" size="1" id="2nd_Office">
+          <option value="Cupertino" selected>Cupertino</option>
+            <option value="Milpitas">Milpitas</option>
+            <option value="San Francisco">San Francisco</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Fremont">Fremont</option>
+          </select>
+        </div></td>
+        <td><div align="center">
+          <select name="2nd_Day" id="2nd_Day">
+                <option value="Sunday">Sunday</option>
+                <option value="Monday" selected>Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+        </div></td>
+        <td><div align="center">
+          <select name="2nd_Time" id="2nd_Time">
+              <option value="Early Morning (9:00am-10:30am)">Early Morning (9:00am-10:30am)</option>
+              <option value="Late Morning (10:30am - 12:00pm)" selected>Late Morning (10:30am - 12:00pm)</option>
+              <option value="Early Afternoon (12:00pm - 2:00pm)">Early Afternoon (12:00pm - 2:00pm)</option>
+              <option value="Late Afternoon (2:00pm - 5:30pm)">Late Afternoon (2:00pm - 5:30pm)</option>
+              </select>
+        </div></td>
+        </tr>
+      <tr>
+        <th scope="row"><div align="left">3rd Choice </div></th>
+        <td><div align="center">
+          <select name="3rd_Office" size="1" id="3rd_Office">
+          <option value="Cupertino" selected>Cupertino</option>
+            <option value="Milpitas">Milpitas</option>
+            <option value="San Francisco">San Francisco</option>
+                <option value="San Jose">San Jose</option>
+                <option value="Fremont">Fremont</option>
+          </select>
+        </div></td>
+        <td><div align="center">
+          <select name="3rd_Day" id="3rd_Day">
+                <option value="Sunday">Sunday</option>
+                <option value="Monday" selected>Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+              </select>
+        </div></td>
+        <td><div align="center">
+          <select name="3rd_Time" size="1" id="3rd_Time">
+              <option value="Early Morning (9:00am-10:30am)">Early Morning (9:00am-10:30am)</option>
+              <option value="Late Morning (10:30am - 12:00pm)">Late Morning (10:30am - 12:00pm)</option>
+              <option value="Early Afternoon (12:00pm - 2:00pm)" selected>Early Afternoon (12:00pm - 2:00pm)</option>
+              <option value="Late Afternoon (2:00pm - 5:30pm)">Late Afternoon (2:00pm - 5:30pm)</option>
+              </select>
+        </div></td>
+        </tr>
+    </table>
+    <p>&nbsp;</p>
+    <p><strong>Additional requests or comments:</strong><br>
+        <textarea name="comments" cols="50" rows="3" wrap="PHYSICAL" id="comments"></textarea> 
+    </p>
+    <p>&nbsp;      </p>
+    <p>
+        <input type="submit" name="Submit" value="Submit">
+      </p>
+    </form>
+  </div>
+  <!-- InstanceEndEditable -->
+  <!-- InstanceBeginEditable name="EditRegion2" -->
+	  
 </div>
 <!-- A site for reference: view-source:http://www.siteforsoreeyes.com/ -->
 
