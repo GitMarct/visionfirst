@@ -10,68 +10,73 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
-
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-
-
-  <body>
+<body>
   
    <div class="top-nav-wrapper">
   
-  <nav class="title-bar" style="position:fixed;width:100%;">
+  <nav class="title-bar">
   
    <a href="index.html"><img src="img/VF_logo.png" class="awesome" alt="Vision First Logo" style="width:25%;height:25%;"></a>
- 
-       <h6><a href="offices.html">Offices</a>	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp; &nbsp;	&nbsp;	&nbsp;
-       <a href="services.html">Appointments</a>	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp; &nbsp;	&nbsp;	&nbsp;
-       <a href="forms.html">Forms</a></h6>
      
+<ul>
+  <li><a href="offices.html">Offices</a></li>
+  <li><a href="services.html">Appointments</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Feedback Forms</a>
+    <div class="dropdown-content">
+      <a href="general-f.html">General Feedback</a>
+      <a href="grievance-f.html">Member Grievance</a>
+      <a href="provider-f.html">Provider Feedback</a>
+    </div>
+  </li>
+</ul>
  </nav>
  <br/>
  <br/>
  <br/>
- <br/> </div>
-<!--Don't edit anything above this line... for the most part. If you do plan on making changes, however, please have Marc check over them before finalizing the page.-->
+ <br/> 
+ </div>
+ <!--Don't edit anything above this line... for the most part. If you do plan on making changes, however, please have Marc check over them before finalizing the page.-->
 
 <div class="row">
   <h1 id="pageName">Schedule an Appointment</h1>
   <div class="large-6 medium-6 small-12 columns">
   <FORM NAME="request_appt" METHOD="POST" action="mail_appt_request.php" >
-    <table width="445" border="0">
+    <table>
       <tr>
-        <th width="130" scope="row"><div align="left">Name:</div></th>
-        <td width="305">
+        <th scope="row"><div align="left">Name:</div></th>
+        <td>
           <input name="Patient_Name" type="text" id="Patient_Name">
         </td>
       </tr>
       <tr>
-        <th scope="row"><div align="left">Phone contact: </div></th>
+        <th scope="row">Phone contact: </th>
         <td><input name="Phone_Contact" type="text" id="Phone_Contact"></td>
       </tr>
       <tr>
-        <th scope="row"><div align="left">E-mail contact: </div></th>
+        <th scope="row">E-mail contact:</th>
         <td><input name="Email_Contact" type="text" id="Email_Contact"></td>
       </tr>
     </table>
     <p>Please select your preferred times. While cannot guarantee availability at your requested times, we will try our best to accomodate your scheduling requirements. We will contact you to confirm your appointment.</p>
-    <table width="702" height="108" border="0">
+    <table>
       <tr>
-        <th width="87" scope="col">&nbsp;</th>
-        <th width="182" scope="col"><div align="center">Office</div></th>
-        <th width="183" scope="col"><div align="center">Day of the Week </div></th>
-        <th width="232" scope="col"><div align="center">Time of the Day </div></th>
+       <br/>
+        <th>Office</th>
+        <th>Day of the Week</th>
+        <th>Time of the Day</th>
         </tr>
       <tr>
-        <th scope="row"><div align="left">1st Choice </div></th>
-        <td><div align="center">
+        <th scope="row">1st Choice</th>
+        <td>
           <select name="1st_Office" size="1" id="1st_Office">
-          <option value="Cupertino" selected>Cupertino</option>
               <option value="Milpitas">Milpitas</option>
               <option value="San Francisco">San Francisco</option>
               <option value="San Jose">San Jose</option>
               <option value="Fremont">Fremont</option>
           </select>
-        </div></td>
+      </td>
         <td><div align="center">
           <select name="1st_Day" id="1st_Day">
               <option value="Sunday">Sunday</option>
@@ -96,7 +101,6 @@
         <th scope="row"><div align="left">2nd Choice </div></th>
         <td><div align="center">
           <select name="2nd_Office" size="1" id="2nd_Office">
-          <option value="Cupertino" selected>Cupertino</option>
             <option value="Milpitas">Milpitas</option>
             <option value="San Francisco">San Francisco</option>
                 <option value="San Jose">San Jose</option>
@@ -127,7 +131,6 @@
         <th scope="row"><div align="left">3rd Choice </div></th>
         <td><div align="center">
           <select name="3rd_Office" size="1" id="3rd_Office">
-          <option value="Cupertino" selected>Cupertino</option>
             <option value="Milpitas">Milpitas</option>
             <option value="San Francisco">San Francisco</option>
                 <option value="San Jose">San Jose</option>
