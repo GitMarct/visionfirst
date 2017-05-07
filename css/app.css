@@ -34,6 +34,14 @@ text-align: center;
 margin-top: 45px;
 }
 
+.title-heading-m {
+margin-top: 55px;
+}
+
+.title-heading-p {
+margin-top: 35px;
+}
+
 .awesome {
 display: block;
 margin: 0 auto;
