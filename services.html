@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
@@ -40,44 +41,35 @@
  <!--Don't edit anything above this line... for the most part. If you do plan on making changes, however, please have Marc check over them before finalizing the page.-->
 
 <div class="row">
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <h1>Schedule an Appointment</h1>
-=======
   <h1 id="pageName" class="title-heading">Schedule an Appointment</h1>
->>>>>>> origin/master
-=======
-  <h1 id="pageName" class="title-heading">Schedule an Appointment</h1>
->>>>>>> origin/master
   <div class="large-6 medium-6 small-12 columns">
   <FORM NAME="request_appt" METHOD="POST" action="mail_appt_request.php" >
     <table>
       <tr>
-        <th><div>Name:</div></th>
+        <th scope="row"><div>Name:</div></th>
         <td>
           <input name="Patient_Name" type="text" id="Patient_Name">
         </td>
       </tr>
       <tr>
-        <th>Phone contact: </th>
+        <th scope="row">Phone contact: </th>
         <td><input name="Phone_Contact" type="text" id="Phone_Contact"></td>
       </tr>
       <tr>
-        <th>E-mail contact:</th>
+        <th scope="row">E-mail contact:</th>
         <td><input name="Email_Contact" type="text" id="Email_Contact"></td>
       </tr>
     </table>
     <p>Please select your preferred times. While cannot guarantee availability at your requested times, we will try our best to accomodate your scheduling requirements. We will contact you to confirm your appointment.</p>
     <table>
       <tr>
-      <th></th>
+       <br/>
         <th>Office</th>
         <th>Day of the Week</th>
         <th>Time of the Day</th>
-        
         </tr>
       <tr>
-        <th>1st Choice</th>
+        <th scope="row">1st Choice</th>
         <td>
           <select name="1st_Office" size="1" id="1st_Office">
               <option value="Milpitas">Milpitas</option>
@@ -86,7 +78,7 @@
               <option value="Fremont">Fremont</option>
           </select>
       </td>
-        <td><div>
+        <td><div align="center">
           <select name="1st_Day" id="1st_Day">
               <option value="Sunday">Sunday</option>
               <option value="Monday" selected>Monday</option>
@@ -97,18 +89,18 @@
               <option value="Saturday">Saturday</option>
               </select>
         </div></td>
-        <td><div>
+        <td><div align="center">
           <select name="1st_Time" id="1st_Time">
               <option value="Early Morning (9:00am-10:30am)" selected>Early Morning (9:00am-10:30am)</option>
               <option value="Late Morning (10:30am - 12:00pm)">Late Morning (10:30am - 12:00pm)</option>
               <option value="Early Afternoon (12:00pm - 2:00pm)">Early Afternoon (12:00pm - 2:00pm)</option>
               <option value="Late Afternoon (2:00pm - 5:30pm)">Late Afternoon (2:00pm - 5:30pm)</option>
               </select>
-        </div>
-     
+        </div></td>
+        </tr>
       <tr>
-        <th><div>2nd Choice </div></th>
-        <td><div>
+        <th scope="row"><div align="left">2nd Choice </div></th>
+        <td><div align="center">
           <select name="2nd_Office" size="1" id="2nd_Office">
             <option value="Milpitas">Milpitas</option>
             <option value="San Francisco">San Francisco</option>
@@ -116,7 +108,7 @@
                 <option value="Fremont">Fremont</option>
           </select>
         </div></td>
-        <td><div>
+        <td><div align="center">
           <select name="2nd_Day" id="2nd_Day">
                 <option value="Sunday">Sunday</option>
                 <option value="Monday" selected>Monday</option>
@@ -127,18 +119,18 @@
                 <option value="Saturday">Saturday</option>
               </select>
         </div></td>
-        <td><div>
+        <td><div align="center">
           <select name="2nd_Time" id="2nd_Time">
               <option value="Early Morning (9:00am-10:30am)">Early Morning (9:00am-10:30am)</option>
               <option value="Late Morning (10:30am - 12:00pm)" selected>Late Morning (10:30am - 12:00pm)</option>
               <option value="Early Afternoon (12:00pm - 2:00pm)">Early Afternoon (12:00pm - 2:00pm)</option>
               <option value="Late Afternoon (2:00pm - 5:30pm)">Late Afternoon (2:00pm - 5:30pm)</option>
               </select>
-        </div>
-      
+        </div></td>
+        </tr>
       <tr>
-        <th scope="row"><div>3rd Choice </div></th>
-        <td><div>
+        <th scope="row"><div align="left">3rd Choice </div></th>
+        <td><div align="center">
           <select name="3rd_Office" size="1" id="3rd_Office">
             <option value="Milpitas">Milpitas</option>
             <option value="San Francisco">San Francisco</option>
@@ -146,7 +138,7 @@
                 <option value="Fremont">Fremont</option>
           </select>
         </div></td>
-        <td><div>
+        <td><div align="center">
           <select name="3rd_Day" id="3rd_Day">
                 <option value="Sunday">Sunday</option>
                 <option value="Monday" selected>Monday</option>
@@ -157,27 +149,19 @@
                 <option value="Saturday">Saturday</option>
               </select>
         </div></td>
-        <td><div>
+        <td><div align="center">
           <select name="3rd_Time" size="1" id="3rd_Time">
               <option value="Early Morning (9:00am-10:30am)">Early Morning (9:00am-10:30am)</option>
               <option value="Late Morning (10:30am - 12:00pm)">Late Morning (10:30am - 12:00pm)</option>
               <option value="Early Afternoon (12:00pm - 2:00pm)" selected>Early Afternoon (12:00pm - 2:00pm)</option>
               <option value="Late Afternoon (2:00pm - 5:30pm)">Late Afternoon (2:00pm - 5:30pm)</option>
               </select>
-        </div>
-      
+        </div></td>
+        </tr>
     </table>
     <p>&nbsp;</p>
     <p><strong>Additional requests or comments:</strong><br>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <textarea name="comments" cols="50" rows="3" id="comments"></textarea> 
-=======
         <textarea name="comments" cols="50" rows="3" wrap="PHYSICAL" id="comments"></textarea>
->>>>>>> origin/master
-=======
-        <textarea name="comments" cols="50" rows="3" wrap="PHYSICAL" id="comments"></textarea>
->>>>>>> origin/master
     </p>
     <p>&nbsp;      </p>
     <p>
