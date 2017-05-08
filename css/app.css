@@ -22,7 +22,6 @@ font-weight: bold;
 }
 
 .title-bar {
-position:fixed;
 width: 100%;
 padding:0px;
 background: rgba(214, 223, 255, 1);
