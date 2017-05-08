@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: #c8d7e1;
 }
 
 #mainImage {
@@ -31,15 +31,7 @@ text-align: center;
 }
 
 .title-heading {
-margin-top: 45px;
-}
-
-.title-heading-m {
-margin-top: 55px;
-}
-
-.title-heading-p {
-margin-top: 35px;
+margin-top: 60px;
 }
 
 .awesome {
@@ -61,6 +53,7 @@ margin: 0;
 
 p {
 	padding:10px;
+  color: #5c7cf7;
 }
 a:link {
   color:#2847B2;
@@ -86,14 +79,12 @@ a:visited {
 header, h1, h2, h3, h4, h5, h6 {
 font-family: 'Crete Round', serif;
 font-weight: bold;
+color: #5c7cf7;
+text-align:center;
 }
 
 header {
 font-size: 300%;
-}
-
-header, h1, h2, h4, h6 {
- text-align:center;
 }
 
 .gutter {
